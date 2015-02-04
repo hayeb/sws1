@@ -1,0 +1,13 @@
+  496  cd Kunstmatige\ Intelligentie\ 2014\ \(B2\)/
+  497  ls
+  498  mkdir sws1-4290402-000000
+  499  mkdir sws1-4290402-000000/exercise1 sws1-4290402-000000/exercise2 sws1-4290402-000000/exercise3
+  500  cd sws1-4290402-000000/
+  501  vim names.txt
+  502  ls -lhs
+  503  cd ..
+  504  ls -lhs
+  505  vim sws1-4290402-000000/exercise1/1b.txt
+  506  ls --help
+  507  history
+  508  history 13 >> sws1-4290402-000000/exercise1/commands

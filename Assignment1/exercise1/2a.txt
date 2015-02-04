@@ -1,0 +1,3 @@
+  519  cat genome.txt | tr -d '\n' | grep -o GATTACA | wc -l
+  520  history 2 >> 2a.txt
+5
