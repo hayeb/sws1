@@ -1,0 +1,7 @@
+Opening file..
+Genome file validated.
+Frequencies: 
+A: 12534
+C: 4208314
+T: 12513
+G: 12399
