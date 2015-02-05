@@ -17,7 +17,7 @@ int check_valid_genomes(FILE *file) {
         else {
             if (count != 100) {
                 fprintf(stderr, "File contains error on line: %i\n", linecount);
-                correct = 1 ;           
+                correct = -1 ;           
             }
             count = 0 ;
             linecount += 1 ;
@@ -29,21 +29,24 @@ int check_valid_genomes(FILE *file) {
     if (linecount != 500) {
         fprintf(stderr, "File does not have the correct amount of lines.\n");
         fprintf(stderr, "Number of lines: %d\n", linecount) ;
-        return 1 ;    
+        return -1 ;    
     }
     return correct;
-
-
-
 }
+
 int main(int argc, char *argv[]) {
-	printf("Opening file..\n") ;
+    if (argc == 1) {
+	printf("No file specified.\n");
+	printf("Usage: ./parsegenome path/to/file\n");
+	return -1 ;
+    }
+    printf("Opening file..\n") ;
     FILE *fp;
-    fp = fopen("genome.txt", "r");
+    fp = fopen(argv[1], "r");
 
     if (fp  == NULL) {
        fprintf(stderr, "Can't open the file!\n") ;
-       return 1  ;
+       return -1  ;
     } 
     
     if (check_valid_genomes(fp) == 0) {
@@ -52,6 +55,6 @@ int main(int argc, char *argv[]) {
     }
     else {
         fprintf(stderr, "Genome file is corrupt or incorrect.\n");
-        return 1;
+        return -1;
     }
 } 
