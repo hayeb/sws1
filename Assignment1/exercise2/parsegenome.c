@@ -80,7 +80,7 @@ int main(int argc, char *argv[]) {
 
     int freq_a = 0;
     int freq_c = 0;
-    int freq_g = 0 ;
+    int freq_g = 0;
     int freq_t = 0;
     int *pa = &freq_a ;
     int *pc = &freq_c;
@@ -95,10 +95,10 @@ int main(int argc, char *argv[]) {
     if (valid_genomes_file(fp, pa, pc, pt, pg)) {
       fprintf(stdout, "Genome file \"%s\" validated.\n", argv[1]);
 	fprintf(stdout, "Frequencies: \n");
-	fprintf(stdout, "A: %d\n", freq_a) ;
-	fprintf(stdout, "C: %d\n", freq_c) ;
-	fprintf(stdout, "T: %d\n", freq_t) ;
-	fprintf(stdout, "G: %d\n", freq_g) ;
+	fprintf(stdout, "A: %lf\n", freq_a/50000.0) ;
+	fprintf(stdout, "C: %lf\n", freq_c/50000.0) ;
+	fprintf(stdout, "T: %lf\n", freq_t/50000.0) ;
+	fprintf(stdout, "G: %lf\n", freq_g/50000.0) ;
 	
         return 0;
     }

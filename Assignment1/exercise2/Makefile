@@ -3,5 +3,5 @@ CFLAGS=-Wall -Wextra
 
 all: parsegenome
 
-parsegenome: verificating/parsegenome.c
-	 $(CC) $(CFLAGS) verificating/parsegenome.c -o verificating/parsegenome
+parsegenome: parsegenome.c
+	 $(CC) $(CFLAGS) parsegenome.c -o parsegenome
