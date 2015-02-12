@@ -1,0 +1,39 @@
+Size of i: 2
+Size of x: 1
+Size of sn1: 8
+Size of sn2: 8
+Size of y: 8
+
+Address			content (hex)			content (dec)
+i:
+0x7fff5375a9ae			34			52
+0x7fff5375a9af			12			18
+x:
+0x7fff5375a9ad			81			129
+sn1:
+0x7fff5375a9a0			62			98
+0x7fff5375a9a1			77			119
+0x7fff5375a9a2			41			65
+0x7fff5375a9a3			0			0
+0x7fff5375a9a4			0			0
+0x7fff5375a9a5			0			0
+0x7fff5375a9a6			0			0
+0x7fff5375a9a7			0			0
+sn2:
+0x7fff5375a998			7c			124
+0x7fff5375a999			4f			79
+0x7fff5375a99a			3d			61
+0x7fff5375a99b			0			0
+0x7fff5375a99c			0			0
+0x7fff5375a99d			0			0
+0x7fff5375a99e			0			0
+0x7fff5375a99f			0			0
+y:
+0x7fff5375a990			44			68
+0x7fff5375a991			33			51
+0x7fff5375a992			22			34
+0x7fff5375a993			11			17
+0x7fff5375a994			11			17
+0x7fff5375a995			22			34
+0x7fff5375a996			33			51
+0x7fff5375a997			44			68

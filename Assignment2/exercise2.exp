@@ -1,0 +1,5 @@
+short i: consists of two byes on my machine, located at ..9ae and ..9af
+char x: consists of one bytes on my machine, located at .9ad
+long sn1: consists of 8 bytes on my machine, located at consecutive positions in memory: ..9a0 - ..9a7
+long sn2: consists of 8 bytes on my machine, located at consecutive positions in memory: ..998 - ..99f
+int y[2]: consists of 8 byte on my machine, since each index has to be able to hold a 4 byte integer. (..990 - ..997)
