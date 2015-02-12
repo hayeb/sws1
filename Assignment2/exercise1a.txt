@@ -1,0 +1,1 @@
+/dev/random generates "true" randomness with blocking. When /dev/random runs ut of entropy, it blocks until more entropy is generated. /dev/urandom doesn't do this, and DOES provide randomness wich is suitable for computer security applications.
