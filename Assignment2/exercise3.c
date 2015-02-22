@@ -9,7 +9,7 @@ int main(void) {
     fprintf(stdout, "True in hex: 0x%04x\n", b) ;
     fprintf(stdout, "False in hex: 0x%04x\n", b = false);
     b = 0x11223344 ;
-    fprintf(stdout, "tried to assign 0x11223344, noolean is now: 0x%04x\n", b) ;
+    fprintf(stdout, "Tried to assign 0x11223344, boolean is now: 0x%04x\n", b) ;
     // As seen when executing, anything other than 0x0000 is interpreted as true. 
 
 }

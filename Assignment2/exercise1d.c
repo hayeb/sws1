@@ -21,4 +21,5 @@ int main(void) {
 	fprintf(stdout, "%04x\n", int16) ;
 	count += 1 ;
     } while (int16 != 42) ;
+    return 0 ; 
 }

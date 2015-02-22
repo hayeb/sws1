@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-/* This program reads bytes from /dev/urandom until the byte equals 42.
+/* This program reads bytes from /dev/urandom until character representation of the byte equals 42.
  */
 int main(void) {
     printf("Starting reading from random..") ;
     FILE *fp;
+    // Open file as "read binary"
     fp = fopen("/dev/urandom", "rb") ;
 
     if (fp == NULL) {
@@ -12,15 +13,14 @@ int main(void) {
 	return -1 ;
     }
 
-    // Determine size of a character
-    char c = '\0';
+    char c;
     int count = 0 ;
     while (c != (char) 42) {
 	c = fgetc(fp) ;
 	fprintf(stdout, "%i %u %x\n", c, c, c) ;
 	count++ ;
     }
+    fprintf(stdout, "Found %i random bytes.\n", count) ;
     return 0 ;
-    //fprintf(stdout, "Found %i random bytes.\n", count) ;
 }
   

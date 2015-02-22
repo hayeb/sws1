@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 void show_bytes(unsigned char *p, int length) {
-    for (int i = 0; i < length; p++) {
+    int i ;
+    for (i = 0; i < length; p++) {
 	fprintf(stdout, "%p\t\t\t%x\t\t\t%i\n", &*p,(unsigned char) *p, (unsigned char) *p) ;
 	i++ ;
     }
@@ -32,6 +33,7 @@ int main(void) {
     show_bytes((unsigned char*) &sn2, (unsigned int) sizeof(sn2)) ;
     fprintf(stdout, "y:\n") ;
     show_bytes((unsigned char*) &y, (unsigned int) sizeof(y));
+    return 0 ;
 
 }
 
