@@ -1,0 +1,1 @@
+I used the following command: "./exercise1d | wc -l". This works due to the fact that exercise1d writes each next random number on a new line.
