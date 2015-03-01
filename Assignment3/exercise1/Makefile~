@@ -1,0 +1,5 @@
+exercise1: exercise1.c magic_function.o
+	gcc -fno-stack-protector -std=c99 -o exercise1 exercise1.c magic_function.o
+
+magic_function.o: magic_function.c
+	gcc -c -fno-stack-protector -std=c99 -o magic_function.o magic_function.c
