@@ -1,0 +1,6 @@
+0x7fffb3ccb320  (a. The program prints the address of the pointer, which is apparently the address the pointer points to)
+0x7fffb3ccb324  (b. Prints the address of the second item in x)
+0x7fffb3ccb330  (c. Prints the address of x + 1 * length of array x)
+23	        (d. Print the value of the first element of x) 
+28	        (e. Print the value of x[0] + x[2])
+151	        (f. Print the value of x[0] + x[3] = 23 + (1<<7) = 23 + 1 * 2^7 = 151)

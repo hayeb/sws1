@@ -1,7 +1,13 @@
-all:
+CC = gcc
+CFLAGS = -g -std=c99 -fno-stack-protector -Wall
+PROGAMS = exercise1
 
-exercise1: exercise1.c magic_function.h
-	gcc -Wall -Wextra exercise1.c -o exercise1
+all: $(PROGRAMS)
+exercise1: exercise1.c magic_function.o
+	$(CC) $(CFLAGS) -o exercise1 exercise1.c magic_function.o
 
-addvector: addvector.h test_exercise2.c
-	gcc -Wall -Wextra test_exercise2.c -o test_exercise2
+magic_function.o: magic_function.c
+	$(CC) $(CFLAGS) -c -o magic_function.o magic_function.c
+
+clean:
+	rm -f exercise1 exercise1.c~ exercise1.h~ magic_function.c~ magic_function.o
