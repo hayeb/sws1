@@ -14,17 +14,25 @@ void create_4mb_array() {
 int main(void) {
     const int size = 4194304;
     int i;
-    const int* p = &i;
-    unsigned long bytes = 0 ;
+    const unsigned char* p =(unsigned char*) &i;
+    unsigned int bytes = 0 ;
     int works = 0 ;
     char* heap_array = malloc(size);
+    printf("%p\n", heap_array);
 
     create_4mb_array() ;
     magic_function() ;
 
     for (i = 0; i < size; i++) {
-	*(heap_array+i) = *(p+i);	
+	*(heap_array+i) = *(p-i);	
     }
-    printf("magic_function uses %lu bytes. Works: %d\n", bytes, works) ;
-}
+    int j = 0;
+   
+    for (int j = 0; j < size; j++) {
+	if ( *(heap_array+j) != 'X') {
+	bytes++;
+	}
+    }
 
+    printf("magic_function uses %d bytes. Works: %d\n", bytes, works) ;
+}
